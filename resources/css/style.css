@@ -37,8 +37,8 @@ body {
 /* THOUGHT: when you figure out how to have the nav on every page, come back and make sure that this grey cbcbcb 
    displays on every page except for the home page. */ 
 .content {
-    height: 90vh;
-    line-height: 90vh;
+    height: 80vh;
+    line-height: 80vh;
     /*border: double 9px #8FBDC6;*/
     /*margin: 0 50px 50px 50px;*/
     /*background-color: #CBCBCB;*/
