@@ -28,7 +28,7 @@ body {
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.05)), url(img/background-home.jpg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -36,12 +36,18 @@ body {
 
 /* THOUGHT: when you figure out how to have the nav on every page, come back and make sure that this grey cbcbcb 
    displays on every page except for the home page. */ 
-.content {
-    height: 80vh;
-    line-height: 80vh;
+.content-home {
+    height: 60vh;
+    line-height: 60vh;
     /*border: double 9px #8FBDC6;*/
     /*margin: 0 50px 50px 50px;*/
     /*background-color: #CBCBCB;*/
+}
+
+.content {
+    height: 80vh;
+    line-height: 80vh;
+    background-color: rgba(183, 213, 218, 0.95);
 }
 
 .clearfix {zoom: 1;}
@@ -61,6 +67,16 @@ body {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+    height: 100%;
+}
+
+.line-border-outer {
+    border: double 9px rgba(143, 189, 198, 0.8);;
+}
+.line-border-inner {
+    border: double 9px rgba(143, 189, 198, 0.5);
+    padding: 2% 4%;
+    margin: 0.75%;
 }
 
 section {
@@ -88,12 +104,16 @@ h1 {
     display: inline-block
 }
 
+p {
+    line-height: 135%;
+}
+
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
 
 header {
-    /*text-shadow: 2px 1px #5C797F;*/
+    text-shadow: 2px 2px #32496d;
 }
 
 /* Main navi */
@@ -132,4 +152,65 @@ footer {
     background-color: #1C2622;
     padding: 50px;
     font-size: 80%;
+}
+
+.footer-home {
+    background: none;
+}
+
+.social-box {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 45px;
+    float: right;
+    
+}
+
+.social-links li:first-child {
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    padding: 9px;
+    transition: transform 0.3s;
+    text-shadow: 2px 2px #32496d;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 275%;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    color: #b7d5da;
+    transform: scale(1.2);
+    transition: transform 0.35s;
+}
+
+
+/*-----------------------------------------------------------------*/
+/* BIO  */
+/*-----------------------------------------------------------------*/
+
+.bio-box {
+    line-height: 135%;
+    padding: 0 5%;
+    height: 100%;
 }
