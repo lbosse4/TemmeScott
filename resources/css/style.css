@@ -28,26 +28,27 @@ body {
 }
 
 body {
+    width: 100%;
+    background-color: #8FBDC6;
+}
+
+#body-home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.05)), url(img/background-home.jpg);
     background-attachment: fixed;
     background-size: cover;
-    width: 100%;
+    height: 100vh;
 }
 
 /* THOUGHT: when you figure out how to have the nav on every page, come back and make sure that this grey cbcbcb 
    displays on every page except for the home page. */ 
 .content-home {
-    height: 60vh;
-    line-height: 60vh;
-    /*border: double 9px #8FBDC6;*/
-    /*margin: 0 50px 50px 50px;*/
-    /*background-color: #CBCBCB;*/
+   height: 63vh;  
 }
 
 .content {
-    height: 80vh;
-    line-height: 80vh;
-    background-color: rgba(183, 213, 218, 0.95);
+    /*border: double 9px #8FBDC6;*/
+    /*margin: 0 50px 50px 50px;*/
+    /*background-color: #CBCBCB;*/
 }
 
 .clearfix {zoom: 1;}
@@ -156,10 +157,7 @@ footer {
 
 .footer-home {
     background: none;
-}
-
-.social-box {
-    text-align: center;
+    bottom: 0;
 }
 
 .social-links {
@@ -183,13 +181,24 @@ footer {
     border: 0;
     width: 60px;
     height: 60px;
-    color: #fff;
     border-radius: 50%;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
-    padding: 9px;
+    padding: 12px;
     transition: transform 0.3s;
     text-shadow: 2px 2px #32496d;
+}
+
+.social-home li a:link,
+.social-home li a:visited {
+    color: #c1c1c1;
+}
+
+.social-aux li a:link,
+.social-aux li a:visited {
+    color: #1C2622;
+    background-color: #555;
+    text-shadow: 2px 2px #555;
 }
 
 .social-links li a:link,
@@ -199,9 +208,19 @@ footer {
 
 .social-links li a:hover,
 .social-links li a:active {
-    color: #b7d5da;
+    
     transform: scale(1.2);
     transition: transform 0.35s;
+}
+
+.social-home li a:hover,
+.social-home li a:active {
+    color: #fff;
+}
+
+.social-aux li a:hover,
+.social-aux li a:active {
+    color: #c1c1c1;
 }
 
 
