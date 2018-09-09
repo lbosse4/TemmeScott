@@ -88,6 +88,12 @@ section {
     padding: 1%;
 }
 
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
 /* ----- HEADINGS ----- */
 h1,
 h2,
@@ -140,9 +146,14 @@ header {
     transition: border-bottom 0.2s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
+.nav-home li a:hover,
+.nav-home li a:active {
     border-bottom: 2px solid #8fbdc6;
+}
+
+.nav-aux li a:hover,
+.nav-aux li a:active {
+    border-bottom: 2px solid #32496d;
 }
 
 /*-----------------------------------------------------------------*/
@@ -203,7 +214,7 @@ footer {
 
 .social-links li a:link,
 .social-links li a:visited {
-    font-size: 275%;
+    font-size: 250%;
 }
 
 .social-links li a:hover,
@@ -223,6 +234,10 @@ footer {
     color: #c1c1c1;
 }
 
+.footer-text {
+    padding-top: 12px;
+    display: inline-block;
+}
 
 /*-----------------------------------------------------------------*/
 /* BIO  */
