@@ -194,7 +194,6 @@ footer {
     height: 60px;
     border-radius: 50%;
     -webkit-transition: color 0.3s;
-    transition: color 0.3s;
     padding: 12px;
     transition: transform 0.3s;
     text-shadow: 2px 2px #32496d;
@@ -202,11 +201,13 @@ footer {
 
 .social-home li a:link,
 .social-home li a:visited {
+    transition: color 0.3s;
     color: #c1c1c1;
 }
 
 .social-aux li a:link,
 .social-aux li a:visited {
+    transition: color 0.3s;
     color: #1C2622;
     background-color: #555;
     text-shadow: 2px 2px #555;
