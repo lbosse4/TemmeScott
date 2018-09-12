@@ -263,10 +263,16 @@ footer {
 /*-----------------------------------------------------------------*/
 
 .vertical-photo {
-    
+    width: 33%;
+    height: auto;
 }
 
 .horizontal-photo {
+    width: 45%;
+    height: auto;
+}
+
+.grid-item {
     
 }
 

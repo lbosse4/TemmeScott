@@ -21,7 +21,7 @@
         
     </head>
     
-    <body>
+    <body id="body-photos">
         <header>
             <div class="row">
                 <a href="index.html"><h1>temme scott</h1></a>
@@ -37,22 +37,26 @@
         </header>
 
         <div class="title"><h2>Photos</h2></div>
+        <section>
+            <div class="row grid">
+                <div class="grid-item"><img src="resources/img/temme-vertical-1.jpg" class="vertical-photo"></div>
+                <div class="grid-item grid-item--vertical"><img src="resources/img/temme-horizontal-1.jpg" class="horizontal-photo"></div>
+                <div class="grid-item"><img src="resources/img/temme-vertical-2.jpg" class="vertical-photo"></div>
+  
+            </div>
+        </section>
+        
+        <!--
+        
         <section class="content photos">
             <div class="row">
-                <div class="col span-1-of-3 box">
-                    <img src="resources/img/temme-horizontal-1.jpg">
-                </div>
-                <div class="col span-1-of-3 box">
-                    <img src="resources/img/temme-horizontal-2.jpg">
-                </div>
-                <div class="col span-1-of-3 box">
-                    <img src="resources/img/temme-horizontal-3.jpg">
-                </div>
-                <div class="col span-1-of-3 box">
-                    <img src="resources/img/temme-horizontal-4.jpg">
-                </div>
+                
+                <img src="resources/img/temme-vertical-1.jpg" class="vertical-photo">
+                <img src="resources/img/temme-horizontal-2.jpg" class="horizontal-photo">
+                <img src="resources/img/temme-horizontal-3.jpg" class="horizontal-photo">
+                <img src="resources/img/temme-horizontal-4.jpg" class="horizontal-photo">
             </div>
-            <div class="row">
+            <!---<div class="row">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/temme-horizontal-5.jpg">
                 </div>
@@ -99,7 +103,7 @@
                     <img src="resources/img/temme-horizontal-13.jpg">
                 </div>
             </div>
-        </section>
+        </section>-->
 
 
 
@@ -117,6 +121,8 @@
                 </div>
             </div>
         </footer>
+        
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     </body>
     
     
