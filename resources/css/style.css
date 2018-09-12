@@ -36,13 +36,6 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.05)), url(img/background-home.jpg);
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
-}
-
-/* THOUGHT: when you figure out how to have the nav on every page, come back and make sure that this grey cbcbcb 
-   displays on every page except for the home page. */ 
-.content-home {
-   height: 63vh;  
 }
 
 .content {
@@ -58,6 +51,14 @@ body {
     display: block;
     height: 0;
     visibility: hidden;
+}
+
+::selection{
+  background: rgba(69, 77, 74, 0.7); 
+}
+
+::-moz-selection {
+  background: rgba(69, 77, 74, 0.7); /* Gecko Browsers */
 }
 
 /* ----------------------------------------------- */
@@ -92,6 +93,10 @@ section {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+.title {
+    text-align: center;
 }
 
 /* ----- HEADINGS ----- */
@@ -166,11 +171,6 @@ footer {
     font-size: 80%;
 }
 
-.footer-home {
-    background: none;
-    bottom: 0;
-}
-
 .social-links {
     list-style: none;
 }
@@ -238,6 +238,36 @@ footer {
 .footer-text {
     padding-top: 12px;
     display: inline-block;
+}
+
+/*-----------------------------------------------------------------*/
+/* HOME  */
+/*-----------------------------------------------------------------*/
+
+#body-home header {
+    height: 20vh;
+}
+
+#body-home section {
+   height: 65vh;  
+}
+
+#body-home footer {
+    height: 15vh;
+    background: none;
+    bottom: 0;
+}
+
+/*-----------------------------------------------------------------*/
+/* PHOTOS  */
+/*-----------------------------------------------------------------*/
+
+.vertical-photo {
+    
+}
+
+.horizontal-photo {
+    
 }
 
 /*-----------------------------------------------------------------*/
