@@ -281,7 +281,36 @@ footer {
     display: inline-block;
 }
 
+.temme-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
 
+.temme-photo:hover {
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.temme-photo img {
+    opacity: 0.75;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.temme-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+}
 
 
 /*-----------------------------------------------------------------*/
