@@ -288,12 +288,6 @@ footer {
     background-color: #000;
 }
 
-.temme-photo:hover {
-    -webkit-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    transform: scale(1.25);
-}
-
 .temme-photo img {
     opacity: 0.75;
     width: 100%;
