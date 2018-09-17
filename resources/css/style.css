@@ -263,18 +263,26 @@ footer {
 /*-----------------------------------------------------------------*/
 
 .vertical-photo {
-    width: 33%;
+    width: 100%;
     height: auto;
 }
 
 .horizontal-photo {
-    width: 45%;
+    width: 100%;
     height: auto;
 }
 
-.grid-item {
-    
+.masonry-grid {
+    column-count: 3;
+    column-gap: .5em;
 }
+
+.grid-item  {
+    display: inline-block;
+}
+
+
+
 
 /*-----------------------------------------------------------------*/
 /* BIO  */
