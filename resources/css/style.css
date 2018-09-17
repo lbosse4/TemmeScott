@@ -18,7 +18,7 @@ https://coolors.co/000807-1c2622-8fbdc6-b7d5da-c6cbcb <- with green
 
 html,
 body {
-    background-color: #fff;
+    background-color: #f4f4f4;;
     color: #555;
     font-family: 'Poppins', 'Arial', sans-serif;
     font-weight: 300;
@@ -38,12 +38,6 @@ body {
     background-size: cover;
 }
 
-.content {
-    /*border: double 9px #8FBDC6;*/
-    /*margin: 0 50px 50px 50px;*/
-    /*background-color: #CBCBCB;*/
-}
-
 .clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
@@ -54,7 +48,8 @@ body {
 }
 
 ::selection{
-  background: rgba(69, 77, 74, 0.7); 
+    background: rgba(69, 77, 74, 0.7); 
+    color: #eaeaea;
 }
 
 ::-moz-selection {
@@ -81,10 +76,6 @@ body {
     margin: 0.75%;
 }
 
-section {
-    padding: 80px 0;
-}
-
 .box {
     padding: 1%;
 }
@@ -93,10 +84,6 @@ section {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
-}
-
-.title {
-    text-align: center;
 }
 
 /* ----- HEADINGS ----- */
@@ -113,11 +100,18 @@ h1 {
     font-size: 300%;
     word-spacing: 4px;
     letter-spacing: 5px;
-    display: inline-block
+    display: inline-block;
+}
+
+h2 {
+    margin-bottom: 45px;
+    font-size: 200%;
+    letter-spacing: 3px;    
+    text-align: center;
 }
 
 p {
-    line-height: 135%;
+    line-height: 155%;
 }
 
 /* ----------------------------------------------- */
@@ -259,6 +253,14 @@ footer {
 }
 
 /*-----------------------------------------------------------------*/
+/* LIVE  */
+/*-----------------------------------------------------------------*/
+
+.live-box {
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
 /* PHOTOS  */
 /*-----------------------------------------------------------------*/
 
@@ -306,6 +308,28 @@ footer {
     transform: scale(1.07);
 }
 
+/*-----------------------------------------------------------------*/
+/* VIDEOS  */
+/*-----------------------------------------------------------------*/
+
+.video-box { 
+    text-align: center;
+}
+
+.video-box iframe {
+    margin-bottom: 60px;
+    width: 60%;
+    height: 400px;
+    transition: transform 0.2s;
+
+}
+
+.video-box iframe:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    transition: transform 0.2s;
+}
 
 /*-----------------------------------------------------------------*/
 /* BIO  */
@@ -315,4 +339,9 @@ footer {
     line-height: 135%;
     padding: 0 5%;
     height: 100%;
+}
+
+.bio-box p {
+    border: double 9px rgba(206, 206, 206, 0.68);
+    padding: 65px;
 }
