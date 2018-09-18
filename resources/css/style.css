@@ -34,6 +34,7 @@ body {
 
 #body-home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.05)), url(img/background-home.jpg);
+    /*    background-image: linear-gradient(rgba(143, 189, 198, 0.73), rgba(0, 0, 0, 0.05)), url(img/background-home.jpg);*/
     background-attachment: fixed;
     background-size: cover;
 }
@@ -84,6 +85,10 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+.aux-body section {
+    margin-bottom: 75px;
 }
 
 /* ----- HEADINGS ----- */
@@ -276,7 +281,7 @@ footer {
 
 .masonry-grid {
     column-count: 3;
-    column-gap: .5em;
+    column-gap: .5em; 
 }
 
 .grid-item  {
@@ -321,7 +326,10 @@ footer {
     width: 60%;
     height: 400px;
     transition: transform 0.2s;
+}
 
+.video-box iframe:last-child{
+    margin-bottom: 0;
 }
 
 .video-box iframe:hover {
@@ -332,6 +340,14 @@ footer {
 }
 
 /*-----------------------------------------------------------------*/
+/* LISTEN  */
+/*-----------------------------------------------------------------*/
+
+.listen-box { 
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
 /* BIO  */
 /*-----------------------------------------------------------------*/
 
@@ -339,6 +355,7 @@ footer {
     line-height: 135%;
     padding: 0 5%;
     height: 100%;
+    margin-bottom: 65px;
 }
 
 .bio-box p {
