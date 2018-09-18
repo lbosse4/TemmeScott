@@ -347,6 +347,19 @@ footer {
     text-align: center;
 }
 
+.listen-box iframe {
+    width: 60%;
+    height: 650px;
+    transition: transform 0.2s;
+}
+
+.listen-box iframe:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    transition: transform 0.2s;
+}
+
 /*-----------------------------------------------------------------*/
 /* BIO  */
 /*-----------------------------------------------------------------*/
