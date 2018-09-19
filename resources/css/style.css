@@ -119,6 +119,27 @@ p {
     line-height: 155%;
 }
 
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 13px 40px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: #919191;
+    color: #fff;
+    margin: 0 30px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #32496d;
+}
+
+
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -347,17 +368,10 @@ footer {
     text-align: center;
 }
 
-.listen-box iframe {
+.listen-box .row img {
     width: 60%;
-    height: 650px;
-    transition: transform 0.2s;
-}
-
-.listen-box iframe:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-    transition: transform 0.2s;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 /*-----------------------------------------------------------------*/
