@@ -22,20 +22,20 @@
     </head>
     
     <body class="aux-body" id="body-photos">
-                    
-        
         <header>
-            <div class="row">
-                <a href="index.html"><h1>temme scott</h1></a>
-                <ul class="main-nav nav-aux">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="live.html">live</a></li>
-                    <li><a href="photos.html">photos</a></li>
-                    <li><a href="videos.html">videos</a></li>
-                    <li><a href="listen.html">listen</a></li>
-                    <li><a href="bio.html">bio</a></li>
-                </ul>
-            </div>
+            <nav>
+                <div class="row">
+                    <a href="index.html"><h1>temme scott</h1></a>
+                    <ul class="main-nav nav-aux">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="live.html">live</a></li>
+                        <li><a href="photos.html">photos</a></li>
+                        <li><a href="videos.html">videos</a></li>
+                        <li><a href="listen.html">listen</a></li>
+                        <li><a href="bio.html">bio</a></li>
+                    </ul>
+                </div>
+            </nav>        
         </header>
 
         
@@ -47,7 +47,7 @@
             <div class="row">
                 <h2>Photos</h2>
             </div>
-            <div class="row masonry-grid">
+            <div class="row masonry-grid js--content">
                 <div class="grid-item">
                     <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-1.jpg'; document.getElementById('modal-image').style.width = '35%';">
                         <figure class="temme-photo">
@@ -200,6 +200,12 @@
             };
  
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
     
     
