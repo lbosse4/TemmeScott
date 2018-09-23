@@ -87,8 +87,13 @@ body {
     margin-bottom: 15px;
 }
 
+.aux-body header {
+    height: 15vh;
+}
+
 .aux-body section {
     margin-bottom: 75px;
+    margin-top: 45px;
 }
 
 /* ----- HEADINGS ----- */
@@ -148,7 +153,7 @@ header {
     text-shadow: 2px 2px #32496d;
 }
 
-/* Main navi */
+/* Main nav */
 .main-nav {
     float: right;
     list-style: none;
@@ -158,6 +163,7 @@ header {
 .main-nav li {
     display: inline-block;
     margin-left: 30px;
+    margin-top: 3px;
 }
 
 .main-nav li a:link,
@@ -180,6 +186,38 @@ header {
 .nav-aux li a:active {
     border-bottom: 2px solid #32496d;
 }
+
+/* Sticky nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7b7b7b;
+    box-shadow: 0 2px 2px #656565;
+    z-index: 9999;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sticky h1 {
+    margin: 0;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li {
+    margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /*-----------------------------------------------------------------*/
 /* FOOTER  */
@@ -311,7 +349,7 @@ footer {
     text-align: center;
     z-index: 1;
     display: none;
-    transition: all 2s linear;
+    transition: all 2s linear;  
 }
 
 /* have a different class for vert/horiz vs height and width. make height ~75% for vertical and width ~40% for horizontal */
@@ -411,8 +449,6 @@ footer {
 .bio-box {
     line-height: 135%;
     padding: 0 5%;
-    height: 100%;
-    margin-bottom: 65px;
 }
 
 .bio-box p {
