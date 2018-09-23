@@ -68,13 +68,14 @@ body {
     height: 100%;
 }
 
-.line-border-outer {
-    border: double 9px rgba(143, 189, 198, 0.8);;
+.outer-border {
+    border: double 9px rgba(163, 201, 208, 0.50);
+    margin: 0 70px;
 }
-.line-border-inner {
-    border: double 9px rgba(143, 189, 198, 0.5);
-    padding: 2% 4%;
-    margin: 0.75%;
+.inner-border {
+    border: double 9px rgba(163, 201, 208, 0.85);
+    margin: 15px;
+    padding: 65px;
 }
 
 .box {
@@ -193,8 +194,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #7b7b7b;
-    box-shadow: 0 2px 2px #656565;
+    background-color: #8b8b8b;
+    box-shadow: 0 2px 2px #6f6f6f;
     z-index: 9999;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -412,7 +413,7 @@ footer {
 
 .video-box iframe {
     margin-bottom: 60px;
-    width: 60%;
+    width: 90%;
     height: 400px;
     transition: transform 0.2s;
 }
@@ -447,11 +448,9 @@ footer {
 /*-----------------------------------------------------------------*/
 
 .bio-box {
-    line-height: 135%;
-    padding: 0 5%;
+    line-height: 145%;
 }
 
 .bio-box p {
-    border: double 9px rgba(206, 206, 206, 0.68);
-    padding: 65px;
+    padding: 25px;
 }
