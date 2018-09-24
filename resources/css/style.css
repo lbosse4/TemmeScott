@@ -214,10 +214,6 @@ header {
     margin-top: 15px;
 }
 
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-}
-
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
 
