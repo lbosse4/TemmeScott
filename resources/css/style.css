@@ -195,9 +195,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #8b8b8b;
-    box-shadow: 0 2px 2px #6f6f6f;
-    z-index: 9999;
+    background-color: #626262;
+    box-shadow: 0 2px 2px #434343;
+    z-index: 9998;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -359,7 +359,7 @@ footer {
     position: fixed;
     overflow: auto;
     text-align: center;
-    z-index: 1;
+    z-index: 9999;
     display: none;
     transition: all 2s linear;  
 }
@@ -367,15 +367,16 @@ footer {
 /* have a different class for vert/horiz vs height and width. make height ~75% for vertical and width ~40% for horizontal */
 
 #picture-modal img {
-    width: 50%;
-    height: auto;
+    background-color: rgba(143, 189, 198, 0.9);
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: absolute;
-    z-index: 1;
+    padding: 5px;
+    border: double 9px rgba(163, 201, 208, 0.50);
+    width: 85%;
 }
 
 .masonry-grid {
@@ -385,7 +386,6 @@ footer {
 
 .grid-item  {
     display: inline-block;
-    z-index: 2;
     margin-bottom: 10px;
 }
 

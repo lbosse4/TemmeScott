@@ -8,7 +8,7 @@ $(document).ready(function() {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '200px;'
+        offset: '245px;'
     });
     
     var $container = jQuery('#masonry-grid');
@@ -17,7 +17,5 @@ $(document).ready(function() {
       // options
       itemSelector: '.grid-item',
       columnWidth: 200
-    });
-  
-    
+    }); 
 });
