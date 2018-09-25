@@ -74,7 +74,8 @@ body {
 }
 
 .inner-border {
-    border: double 9px rgba(163, 201, 208, 0.85);
+    border: double 9px rgba(153, 195, 203, 0.85);
+    background-color: #ADCFD5;
     margin: 15px;
     padding: 65px;
 }
@@ -232,17 +233,16 @@ footer {
 }
 
 .social-links {
+    text-align: center;
     list-style: none;
 }
 
 .social-links li {
     display: inline-block;
     margin-right: 45px;
-    float: right;
-    
 }
 
-.social-links li:first-child {
+.social-links li:last-child {
     margin-right: 0;
 }
 
@@ -309,7 +309,7 @@ footer {
 }
 
 #body-home section {
-   height: 65vh;  
+   height: 75vh;  
 }
 
 #body-home footer {
@@ -346,6 +346,7 @@ footer {
 
 .inner-border-photos {
     border: double 9px rgba(163, 201, 208, 0.85);
+    background-color: #ADCFD5;
     margin: 15px;
     padding: 25px;
 }
@@ -364,10 +365,8 @@ footer {
     transition: all 2s linear;  
 }
 
-/* have a different class for vert/horiz vs height and width. make height ~75% for vertical and width ~40% for horizontal */
-
 #picture-modal img {
-    background-color: rgba(143, 189, 198, 0.9);
+    background-color: rgba(143, 189, 198, 0.7);
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -434,9 +433,9 @@ footer {
 }
 
 .video-box iframe:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
     transition: transform 0.2s;
 }
 
@@ -449,7 +448,7 @@ footer {
 }
 
 .listen-box .row img {
-    width: 60%;
+    width: 80%;
     height: auto;
     margin-bottom: 30px;
 }
