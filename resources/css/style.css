@@ -123,10 +123,10 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     font-size: 200%;
-    letter-spacing: 3px;    
-    text-align: center;
+    font-style: normal;
+    letter-spacing: 3px;        
 }
 
 p {
@@ -343,8 +343,8 @@ footer {
     line-height: 155%;
 }
 
-.date {
-    font-weight: 500;
+.shows-date {
+    font-weight: 400;
 }
 
 /*-----------------------------------------------------------------*/
