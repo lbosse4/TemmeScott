@@ -369,7 +369,8 @@ footer {
     border: double 9px rgba(163, 201, 208, 0.85);
     background-color: #ADCFD5;
     margin: 15px;
-    padding: 25px;
+    
+    padding: 35px 35px 0 35px;
 }
 
 #picture-modal {
@@ -387,7 +388,11 @@ footer {
 }
 
 #picture-modal img {
-    background-color: rgba(143, 189, 198, 0.7);
+    width: 100%;
+}
+
+#picture-modal figure {
+    background-color: rgba(143, 189, 198, 0.85);
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -396,7 +401,11 @@ footer {
     position: absolute;
     padding: 5px;
     border: double 9px rgba(163, 201, 208, 0.50);
-    width: 85%;
+}
+
+#picture-modal figcaption {
+    color: #3b3b3b;
+    font-weight: 300;
 }
 
 .masonry-grid {
