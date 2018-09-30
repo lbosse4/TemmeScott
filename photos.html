@@ -8,7 +8,6 @@
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
@@ -26,10 +25,10 @@
             <nav>
                 <div class="row">
                     <a href="index.html"><h1>temme scott</h1></a>
-                    <ul class="main-nav nav-aux">
+                    <ul class="main-nav">
                         <li><a href="index.html">home</a></li>
-                        <li><a href="live.html">live</a></li>
-                        <li><a href="photos.html">photos</a></li>
+                        <li><a href="shows.html">shows</a></li>
+                        <li class="active"><a href="#">photos</a></li>
                         <li><a href="videos.html">videos</a></li>
                         <li><a href="listen.html">listen</a></li>
                         <li><a href="bio.html">bio</a></li>
@@ -41,127 +40,72 @@
         
         <section>
             <div id="picture-modal">
-                <img id="modal-image" src="resources/img/temme-vertical-1.JPG">
+                <figure id="modal-figure">
+                    <img id="modal-image" src="resources/img/temme-vertical-5.JPG">
+                    <figcaption><span id="modal-caption">photo by Lily Fiske</span></figcaption>
+                </figure>
+                
             </div>
             
-            <div class="row">
-                <h2>Photos</h2>
-            </div>
             <div class="row js--content">
                 <div class="outer-border-photos">
                     <div class="inner-border-photos masonry-grid">
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-1.jpg'; document.getElementById('modal-image').style.width = '35%';">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-12.jpg'; document.getElementById('modal-figure').style.width = '55%'; document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
+                                <figure class="temme-photo">
+                                    <img src="resources/img/temme-horizontal-12.jpg" class="horizontal-photo">                  
+                                </figure>
+                            </button>
+                        </div>
+                        <div class="grid-item">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-6.jpg'; document.getElementById('modal-figure').style.width = '40%'; document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
+                                <figure class="temme-photo">
+                                    <img src="resources/img/temme-vertical-6.jpg" class="vertical-photo">
+                                </figure>
+                            </button>
+                        </div>
+                        <div class="grid-item">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-11.jpg'; document.getElementById('modal-figure').style.width = '55%'; document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
+                                <figure class="temme-photo">
+                                    <img src="resources/img/temme-horizontal-11.jpg" class="horizontal-photo">                  
+                                </figure>
+                            </button>
+                        </div>  
+                        <div class="grid-item">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-5.jpg'; document.getElementById('modal-figure').style.width = '40%'; document.getElementById('modal-caption').innerHTML='photo by Lily Fiske'">
+                                <figure class="temme-photo">
+                                    <img src="resources/img/temme-vertical-5.jpg" class="vertical-photo">
+                                </figure>
+                            </button>
+                        </div>
+                        <div class="grid-item">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-1.jpg'; document.getElementById('modal-figure').style.width = '40%'; document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
                                 <figure class="temme-photo">
                                     <img src="resources/img/temme-vertical-1.jpg" class="vertical-photo">
                                 </figure>
                             </button>
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-1.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-1.jpg" class="horizontal-photo" href="https://www.google.com">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-2.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-2.jpg" class="horizontal-photo">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-7.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-7.jpg" class="horizontal-photo">                  
-                                </figure>
-                            </button>
-                        </div>  
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-4.jpg'; document.getElementById('modal-image').style.width = '35%';">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-4.jpg'; document.getElementById('modal-figure').style.width = '40%'; document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
                                 <figure class="temme-photo">
                                     <img src="resources/img/temme-vertical-4.jpg" class="vertical-photo">
                                 </figure>
                             </button>
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-5.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-5.jpg" class="horizontal-photo">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-10.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-10.jpg" class="horizontal-photo">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-6.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-6.jpg" class="horizontal-photo">                  
-                                </figure>
-                            </button>
-                        </div> 
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-3.jpg'; document.getElementById('modal-image').style.width = '35%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-vertical-3.jpg" class="vertical-photo">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-3.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-3.jpg" class="horizontal-photo">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-8.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-8.jpg" class="horizontal-photo">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-11.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-11.jpg" class="horizontal-photo">                  
-                                </figure>
-                            </button>
-                        </div> 
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-vertical-2.jpg'; document.getElementById('modal-image').style.width = '35%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-vertical-2.jpg" class="vertical-photo">
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-4.jpg'; document.getElementById('modal-image').style.width = '55%';">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-4.jpg'; document.getElementById('modal-figure').style.width = '55%'; document.getElementById('modal-caption').innerHTML='photo by Emil Chang';">
                                 <figure class="temme-photo">
                                     <img src="resources/img/temme-horizontal-4.jpg" class="horizontal-photo">
                                 </figure>
                             </button>
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-12.jpg'; document.getElementById('modal-image').style.width = '55%';">
+                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-9.jpg'; document.getElementById('modal-figure').style.width = '55%'; document.getElementById('modal-caption').innerHTML='photo by Emil Chang';">
                                 <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-12.jpg" class="horizontal-photo">
+                                    <img src="resources/img/temme-horizontal-9.jpg" class="horizontal-photo">
                                 </figure>
                             </button>
                         </div>
-                        <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; document.getElementById('modal-image').src='resources/img/temme-horizontal-9.jpg'; document.getElementById('modal-image').style.width = '55%';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-9.jpg" class="horizontal-photo">                  
-                                </figure>
-                            </button>
-                        </div>  
                     </div>
                 </div>
             </div>
@@ -169,16 +113,11 @@
       
         <footer>
             <div class="row">  
-                <div class="col span-1-of-2 footer-text">
-                    <p>Temme Scott is legit you should be her friend.</p>
-                </div>
-                <div clas="col span-1-of-2">
-                    <ul class="social-links social-aux">
-                        <li><a href="https://www.facebook.com/temmescott/?fb_dtsg_ag=Adyiyxo7ApfeD7IpDkwboXJpfIVnrR18ao6Y0rf2nhsmdg%3AAdw_1wETmsA-MGDm1Nmsv9wIW9pkbqRZP-5ao3vwDoDQxw" target="_blank" class="fa fa-facebook"></a></li>
-                        <li><a href="https://www.instagram.com/temmescott/" target="_blank" class="fa fa-instagram"></a></li>
-                        <li><a href="https://twitter.com/TemmeScott" target="_blank" class="fa fa-twitter"></a></li>
-                    </ul>
-                </div>
+                <ul class="social-links social-aux">
+                    <li><a href="https://www.facebook.com/temmescott/?fb_dtsg_ag=Adyiyxo7ApfeD7IpDkwboXJpfIVnrR18ao6Y0rf2nhsmdg%3AAdw_1wETmsA-MGDm1Nmsv9wIW9pkbqRZP-5ao3vwDoDQxw" target="_blank" class="fa fa-facebook"></a></li>
+                    <li><a href="https://www.instagram.com/temmescott/" target="_blank" class="fa fa-instagram"></a></li>
+                    <li><a href="https://twitter.com/TemmeScott" target="_blank" class="fa fa-twitter"></a></li>
+                </ul>
             </div>
         </footer>
         
