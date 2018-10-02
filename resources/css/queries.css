@@ -1,3 +1,106 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
+    nav { padding: 0 10px; }
+    
+    .vertical-photo { width: 45%; }
+    .horizontal-photo { width: 65%; }
+    
+    .outer-border-photos { margin: 0 15px; }
+    
+    .inner-border { padding: 50px; }
+    
+    .video-box iframe { height: 350px; }
+    
+    .listen-box .row img {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    /*.inner-border { padding: 30px; }
+
+    .masonry-grid {
+        column-count: 1;
+    } 
+    
+    p {
+        font-size: 90%;
+    }
+    
+    
+    /* NAV 
+    .main-nav { display: none; }
+    .mobile-nav-icon {display: inline-block;}
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li {
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 3px 0 2px 0;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 2px solid #32496d;
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 3px 0 2px 0; }
+    .sticky .main-nav li { margin-top: 0 }
+    .sticky .mobile-nav-icon { margin-top: 20px; }*/
+    
+    /*nav { padding: 0 40px; }*/
+    
+    h1 {
+        margin-bottom: 0;
+        margin-top: 13px;
+        text-align: center;
+    }
+    
+    nav {
+        text-align: center;
+    }
+    
+    .title {
+        display: block;
+        float: none;
+    }
+    
+    .main-nav {
+        margin-top: 0;
+        float: none;
+    }
+    
+    .main-nav li:first-child { margin-left: 0; }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding: 5px 0;
+    }
+    .sticky .main-nav { margin: 0 0 10px 0; }
+    .sticky .main-nav li { margin-top: 0 }
+    .sticky .mobile-nav-icon { margin-top: 20px; }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
 
 }
