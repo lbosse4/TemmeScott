@@ -22,7 +22,6 @@ body {
     font-family: 'Aileron', sans-serif;
     font-style: italic;
     font-weight: 200;
-    letter-spacing: 1px;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
@@ -382,10 +381,9 @@ footer {
 }
 
 .inner-border-photos {
-    border: double 9px rgba(163, 201, 208, 0.85);
+    border: double 9px rgba(153, 195, 203, 0.85);
     background-color: #ADCFD5;
     margin: 15px;
-    
     padding: 35px 35px 0 35px;
 }
 
@@ -407,13 +405,15 @@ footer {
     width: 100%;
 }
 
+/* TODO: Split this into #picture-modal .vertical-photo and .horizontal photo - then translate based on the one we have currently displayed */
 #picture-modal figure {
     background-color: rgba(143, 189, 198, 0.85);
     left: 45%;
-    top: 45%;
-    -webkit-transform: translate(-45%, -45%);
-    -moz-transform: translate(-45%, -45%);
-    transform: translate(-45%, -45%);
+    top: 50%;
+    
+    -webkit-transform: translate(-45%, -50%);
+    -moz-transform: translate(-45%, -50%);
+    transform: translate(-45%, -50%);
     position: absolute;
     padding: 5px;
     border: double 9px rgba(163, 201, 208, 0.50);
