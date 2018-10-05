@@ -366,16 +366,6 @@ footer {
     color: pink !important;
 }
 
-.vertical-photo {
-    width: 30%;
-    height: auto;
-}
-
-.horizontal-photo {
-    width: 50%;
-    height: auto;
-}
-
 .outer-border-photos {
     border: double 9px rgba(163, 201, 208, 0.50);
 }
@@ -405,18 +395,37 @@ footer {
     width: 100%;
 }
 
-/* TODO: Split this into #picture-modal .vertical-photo and .horizontal photo - then translate based on the one we have currently displayed */
 #picture-modal figure {
     background-color: rgba(143, 189, 198, 0.85);
-    left: 45%;
-    top: 50%;
-    
-    -webkit-transform: translate(-45%, -50%);
-    -moz-transform: translate(-45%, -50%);
-    transform: translate(-45%, -50%);
     position: absolute;
     padding: 5px;
     border: double 9px rgba(163, 201, 208, 0.50);
+}
+
+.vertical-photo {
+    width: 30%;
+    height: auto;
+}
+
+.horizontal-photo {
+    width: 50%;
+    height: auto;
+}
+
+#picture-modal .vertical-photo {
+    left: 47%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#picture-modal .horizontal-photo {
+    left: 45%;
+    top: 50%;
+    -webkit-transform: translate(-45%, -50%);
+    -moz-transform: translate(-45%, -50%);
+    transform: translate(-45%, -50%);
 }
 
 #picture-modal figcaption {
