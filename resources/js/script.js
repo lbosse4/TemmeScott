@@ -1,5 +1,22 @@
 $(document).ready(function() {
     
+    /* Mobile navigation */
+    /*
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+        
+        nav.slideToggle(200);
+        
+        if (icon.hasClass('fa-bars')) {
+            icon.addClass('fa-times');
+            icon.removeClass('fa-bars');
+        } else {
+            icon.addClass('fa-bars');
+            icon.removeClass('fa-times');
+        }        
+    });*/
+    
     /* For the sticky navigation */
     $('.js--content').waypoint(function(direction) {
         if (direction == "down") {
@@ -8,13 +25,9 @@ $(document).ready(function() {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '135px;'
+        offset: '125px;'
     });
+  
     
-    var $container = jQuery('#masonry-grid');
     
-    $container.masonry({
-      // options
-      itemSelector: '.grid-item',
-    }); 
 });
