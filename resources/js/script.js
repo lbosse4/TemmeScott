@@ -25,7 +25,7 @@ $(document).ready(function() {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '125px;'
+        offset: '135px;'
     });
   
     
