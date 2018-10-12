@@ -12,6 +12,7 @@ https://coolors.co/000807-1c2622-8fbdc6-b7d5da-c6cbcb <- with green
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -33,6 +34,7 @@ body {
 }
 
 #body-home {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0)), to(rgba(0, 0, 0, 0.00))), url(img/background-the-silent-one.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.00)), url(img/background-the-silent-one.jpg);
     background-attachment: fixed;
     background-position: center center;
@@ -47,6 +49,11 @@ body {
     display: block;
     height: 0;
     visibility: hidden;
+}
+
+::-moz-selection{
+    background: rgba(69, 77, 74, 0.7); 
+    color: #eaeaea;
 }
 
 ::selection{
@@ -151,6 +158,40 @@ p {
     background-color: #32496d;
 }
 
+/* ----------------------------------------------- */
+/* CONSTRUCTION */
+/* ----------------------------------------------- */
+
+#body-construction {
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #FEBA57;
+    height: 100vh;
+    font-weight: 500;
+}
+
+,
+.construction-info h1 {
+    color: #000 !important;
+}
+
+.construction-info {
+    background-color: #fff;
+    height: 100vh;
+    width: 50%;
+    float: left;
+    color: #000 !important;
+    padding: 25px;
+}
+
+.construction-img {
+    width: 50%;
+    height: 100vh;
+    float: right;
+    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0)), to(rgba(0, 0, 0, 0.00))), url(../img/temme-vertical-5-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.00)), url(../img/temme-vertical-5-min.jpg);
+}
 
 /* ----------------------------------------------- */
 /* HEADER */
@@ -221,11 +262,10 @@ header {
     left: 0;
     width: 100%;
     background-color: #626262;
+    -webkit-box-shadow: 0 2px 2px #434343;
     box-shadow: 0 2px 2px #434343;
     z-index: 9998;
     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -282,18 +322,23 @@ footer {
     border-radius: 50%;
     -webkit-transition: color 0.3s;
     padding: 12px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
     text-shadow: 2px 2px #32496d;
 }
 
 .social-home li a:link,
 .social-home li a:visited {
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
     color: #f5f5f5;
 }
 
 .social-aux li a:link,
 .social-aux li a:visited {
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
     color: #1C2622;
     background-color: #555;
@@ -308,14 +353,22 @@ footer {
 .social-links li a:hover,
 .social-links li a:active {
     color: #fff;
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .social-aux li a:hover,
 .social-aux li a:active {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .social-aux li a:hover,
@@ -388,6 +441,7 @@ footer {
     text-align: center;
     z-index: 9999;
     display: none;
+    -webkit-transition: all 2s linear;
     transition: all 2s linear;  
 }
 
@@ -416,7 +470,6 @@ footer {
     left: 47%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -424,7 +477,6 @@ footer {
     left: 45%;
     top: 50%;
     -webkit-transform: translate(-45%, -50%);
-    -moz-transform: translate(-45%, -50%);
     transform: translate(-45%, -50%);
 }
 
@@ -434,13 +486,20 @@ footer {
 }
 
 .masonry-grid {
+    -webkit-column-count: 3;
     column-count: 3;
+    -webkit-column-gap: .5em;
     column-gap: .5em; 
 }
 
 .grid-item  {
     display: inline-block;
     margin-bottom: 10px;
+    width: 97%;
+}
+
+.grid-item button figure {
+    margin: 0;
 }
 
 .temme-photo {
@@ -455,16 +514,17 @@ footer {
     width: 100%;
     height: auto;
     -webkit-transform: scale(1.14);
-    -ms-transform: scale(1.14);
     transform: scale(1.14);
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .temme-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.07);
-    -ms-transform: scale(1.07);
     transform: scale(1.07);
 }
 
@@ -480,7 +540,10 @@ footer {
     margin-bottom: 60px;
     width: 90%;
     height: 400px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .video-box iframe:last-child{
@@ -489,9 +552,11 @@ footer {
 
 .video-box iframe:hover {
     -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
     transform: scale(1.01);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 /*-----------------------------------------------------------------*/
