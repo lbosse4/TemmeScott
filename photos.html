@@ -16,7 +16,15 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <title>Temme Scott</title>
         
-        
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         
     </head>
     
@@ -41,7 +49,7 @@
         <section>
             <div id="picture-modal">
                 <figure id="modal-figure">
-                    <img id="modal-image" src="resources/img/temme-vertical-5.JPG">
+                    <img id="modal-image" src="resources/img/temme-vertical-5-min.jpg">
                     <figcaption><span id="modal-caption">photo by Lily Fiske</span></figcaption>
                 </figure>
                 
@@ -52,91 +60,28 @@
                     <div class="inner-border-photos masonry-grid">
                         <!-- TODO: FIND SET CLASS FUNCTION SO THAT YOU CAN SET THE IMG CLASS TO VERTICAL/HORIZONTAL AND THUS UPDATE THE SIZE OF THE IMAGE DEPENDING ON THE WIDTH OF THE SCREEN :) -->
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-horizontal-12.jpg';  
-                                             document.getElementById('modal-figure').classList.remove('vertical-photo');  
-                                             document.getElementById('modal-figure').classList.add('horizontal-photo'); 
-                                             document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-12.jpg" class="horizontal-photo" alt="temme on stairs">                  
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-horizontal-12-min.jpg" class="js--horizontal-photo js--artist-poole" alt="temme on stairs">
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-vertical-6.jpg'; 
-                                             document.getElementById('modal-figure').classList.remove('horizontal-photo');  
-                                             document.getElementById('modal-figure').classList.add('vertical-photo');
-                                             document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-vertical-6.jpg" class="vertical-photo" alt="the silent one with tool">
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-vertical-6-min.jpg" class="js--vertical-photo js--artist-poole" alt="the silent one with tool">
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-horizontal-11.jpg'; 
-                                             document.getElementById('modal-figure').classList.remove('vertical-photo');  
-                                             document.getElementById('modal-figure').classList.add('horizontal-photo');                                             document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-11.jpg" class="horizontal-photo" alt="temme with flowers">                  
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-horizontal-11-min.jpg" class="js--horizontal-photo js--artist-poole" alt="temme with flowers">
                         </div>  
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-vertical-5.jpg'; 
-                                             document.getElementById('modal-figure').classList.remove('horizontal-photo');  
-                                             document.getElementById('modal-figure').classList.add('vertical-photo');
-                                             document.getElementById('modal-caption').innerHTML='photo by Lily Fiske'">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-vertical-5.jpg" class="vertical-photo" alt="temme with hands around knees">
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-vertical-5-min.jpg" class="js--vertical-photo js--artist-fiske" alt="temme with hands around knees">
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-vertical-1.jpg'; 
-                                             document.getElementById('modal-figure').classList.remove('horizontal-photo');  
-                                             document.getElementById('modal-figure').classList.add('vertical-photo'); 
-                                             document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-vertical-1.jpg" class="vertical-photo" alt="temme standing with rock">
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-vertical-1-min.jpg" class="js--vertical-photo js--artist-poole" alt="temme standing with rock">
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-vertical-4.jpg'; 
-                                             document.getElementById('modal-figure').classList.remove('horizontal-photo');  
-                                             document.getElementById('modal-figure').classList.add('vertical-photo'); 
-                                             document.getElementById('modal-caption').innerHTML='photo by Sean Poole';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-vertical-4.jpg" class="vertical-photo" alt="temme being fierce">
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-vertical-4-min.jpg" class="js--vertical-photo js--artist-poole" alt="temme being fierce">
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-horizontal-4.jpg'; 
-                                             document.getElementById('modal-figure').classList.remove('vertical-photo');  
-                                             document.getElementById('modal-figure').classList.add('horizontal-photo');
-                                             document.getElementById('modal-caption').innerHTML='photo by Emil Chang';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-4.jpg" class="horizontal-photo" alt="temme outside looking away">
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-horizontal-4-min.jpg" class="js--horizontal-photo js--artist-chang" alt="temme outside looking away">
                         </div>
                         <div class="grid-item">
-                            <button onclick="document.getElementById('picture-modal').style.display='block'; 
-                                             document.getElementById('modal-image').src='resources/img/temme-horizontal-9.jpg'; 
-                                             document.getElementById('modal-figure').classList.remove('vertical-photo');  
-                                             document.getElementById('modal-figure').classList.add('horizontal-photo'); 
-                                             document.getElementById('modal-caption').innerHTML='photo by Emil Chang';">
-                                <figure class="temme-photo">
-                                    <img src="resources/img/temme-horizontal-9.jpg" class="horizontal-photo" alt="temme performing live">
-                                </figure>
-                            </button>
+                            <img src="resources/img/temme-horizontal-9-min.jpg" class="js--horizontal-photo js--artist-chang" alt="temme performing live">
                         </div>
                     </div>
                 </div>
