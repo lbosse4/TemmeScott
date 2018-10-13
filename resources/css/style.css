@@ -492,27 +492,30 @@ footer {
     column-gap: .5em; 
 }
 
-.grid-item  {
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 97%;
-}
-
 .grid-item button figure {
     margin: 0;
 }
 
-.temme-photo {
+.grid-item {
     width: 100%;
     margin: 0;
     overflow: hidden;
     background-color: #000;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.temme-photo img {
+.grid-item img {
     opacity: 0.9;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+.grid-item img:hover {
+    opacity: 1;
     -webkit-transform: scale(1.14);
     transform: scale(1.14);
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
@@ -520,12 +523,6 @@ footer {
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
-}
-
-.temme-photo img:hover {
-    opacity: 1;
-    -webkit-transform: scale(1.07);
-    transform: scale(1.07);
 }
 
 /*-----------------------------------------------------------------*/
