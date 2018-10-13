@@ -1,3 +1,26 @@
+
+/* ----------------------------------------------- */
+/* CONSTRUCTION */
+/* ----------------------------------------------- */
+
+/*.construction-info h1 {
+    font-size: 280%;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.construction-info h2 {
+    font-size: 120%;
+    font-weight: 200;
+}
+.construction-info {
+    width: 50%;
+}
+
+.construction-img {
+    width: 50%;
+}
+*/
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
     nav { padding: 0 10px; }
@@ -18,11 +41,13 @@
         width: 90%;
         margin-bottom: 25px;
     }
+    
+    .construction-info { width: 50%; }
+    .construction-img { width: 50%; }
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
-    
     h1 {
         margin-bottom: 0;
         margin-top: 13px;
@@ -72,6 +97,11 @@
     .sticky .main-nav { margin: 0 0 10px 0; }
     .sticky .main-nav li { margin-top: 0 }
     .sticky .mobile-nav-icon { margin-top: 20px; }
+    
+    .construction-info h1 {
+        font-size: 240%;
+        text-align: left;
+    }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
@@ -128,6 +158,15 @@
         margin: 10px 70px;
     }
     
+    .construction-info { 
+        width: 100%;
+        height: 35vh;
+        overflow: visible;
+    }
+    .construction-img { 
+        width: 100%;
+        height: 65vh;
+    }
 }
 
 /* Small phones: from 0 to 480px */
@@ -156,4 +195,7 @@
     
     .social-links li { margin-right: 10px; }
     .bio-box p { font-size: 85%; }
+   
+    .construction-info h1 { font-size: 160%; }
+    .construction-info h2 { font-size: 100%; }
 }
